@@ -5,7 +5,10 @@ Introduction
 ------------
 This script was made to create users on aws EC2 (Ubuntu) with an existing authorization 
 key and assumes <Keypair.pem> is located in the ``.ssh`` local directory. It will add a
-user and create an authorized_keys file with the proper ``chmod`` permission flags.
+user and create an authorized_keys file with the proper ``chmod`` permission flags. The
+public key is then copied over to the newly created user to match the keypair.
+
+On create, passwords are disabled but the new user can set their new password with ``passwd``.
 
 Default port is 22.
 
