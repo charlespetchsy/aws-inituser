@@ -8,7 +8,7 @@ key and assumes <Keypair.pem> is located in the ``.ssh`` local directory. It wil
 user and create an authorized_keys file with the proper ``chmod`` permission flags. The
 public key is then copied over to the newly created user to match the keypair.
 
-On create, passwords are disabled but the new user can set their new password with ``passwd``.
+On create, passwords are disabled but the new user can set their password with ``passwd``.
 
 Default port is 22.
 
