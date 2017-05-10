@@ -17,7 +17,7 @@ Usage
 Before running ``inituser.sh`` on your local machine, be sure the script is made 
 executable by typing in ``chmod +x inituser.sh``
 
-``./inituser [keypair.pem]... [Public DNS (IPv4)]...``
+``./inituser.sh [keypair.pem]... [Public DNS (IPv4)]...``
 
 You will be prompted to type in the name of the new user you wish to add to your EC2.
 
