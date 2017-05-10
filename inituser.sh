@@ -16,8 +16,7 @@ if [ "$#" -ne 2 ]; then
   exit 1
 fi
 
-echo "Please enter the name of the new user: "
-read NEW_USER
+read -p "ENTER NAME OF NEW USER: " NEW_USER
 
 MY_KEY=$1
 ec2=$2
