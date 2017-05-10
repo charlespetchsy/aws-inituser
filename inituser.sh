@@ -13,8 +13,7 @@ if [ $1 = "--help" ]; then
   echo "chmod permission flags. The public key is then copied over to the newly" 
   echo "created user to match the keypair."
   echo "-----------------------------------------------------------------------"
-  echo "Be sure the <Keypair>.pem file has proper permission flags"
-  echo "--> Run 'sudo chmod 600' on your <Keypair>.pem"
+  echo "Be sure the <Keypair>.pem file has proper permission flags."
   echo " "
   exit 1
 elif [ "$#" -ne 2 ]; then
