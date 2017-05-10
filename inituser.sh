@@ -9,11 +9,8 @@
 
 # Default port is 22.
 
-# Standard error checking and checks for root privileges
-if [ "$EUID" -ne 0 ]; then
-  echo "Please run as root! (sudo)" >&2
-  exit 1
-elif [ "$#" -ne 2 ]; then
+# Standard error checking
+if [ "$#" -ne 2 ]; then
   echo "Usage: $0 [Keypair name] [Public DNS (IPv4)]" >&2
   echo "	Example: $0 <Keypair>.pem ubuntu@ec2.compute.amazonaws.com"
   exit 1
