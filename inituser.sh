@@ -23,7 +23,6 @@ elif [ "$#" -ne 2 ]; then
 fi
 
 read -p "Name of new user: " NEW_USER
-
 MY_KEY=$1
 ec2=$2
 
@@ -47,6 +46,7 @@ exit
 echo "Done!"
 echo ...
 echo "Copying over public key..."
+# Requires root to copy over the authorized_keys file between users
 sudo su
 cat /home/$USER/.ssh/authorized_keys > /home/$NEW_USER/.ssh/authorized_keys
 exit
