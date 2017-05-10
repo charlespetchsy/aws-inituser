@@ -1,1 +1,1 @@
-# aws-inituser
+# inituser
