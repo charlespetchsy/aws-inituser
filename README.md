@@ -1,8 +1,8 @@
-Initialize User
-===============
+Amazon Web Service Utility Belt
+===============================
 
-Introduction
-------------
+Initialize User (inituser.sh)
+-----------------------------
 This script was made to create users on aws EC2 (Ubuntu) with an existing authorization 
 key. It will add a user and create an authorized_keys file with the proper ``chmod`` 
 permission flags. The public key is then copied over to the newly created user to match the keypair.
