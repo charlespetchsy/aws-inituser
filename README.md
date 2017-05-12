@@ -1,5 +1,5 @@
-Amazon Web Service Utility Belt
-===============================
+Amazon Web Services Utility Belt
+================================
 
 Initialize User (inituser.sh)
 -----------------------------
