@@ -1,0 +1,8 @@
+-----------------------------------------------------------------------
+It will add a user and create an authorized_keys file with the proper
+chmod permission flags. The public key is then copied over to the newly 
+created user to match the keypair.
+-----------------------------------------------------------------------
+Be sure the <Keypair>.pem file has proper permission flags
+--> Run 'sudo chmod 600' on your <Keypair>.pem
+ 
