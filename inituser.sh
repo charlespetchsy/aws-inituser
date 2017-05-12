@@ -7,14 +7,8 @@
 # Default port is 22.
 
 # Standard error checking
-if [ $1 = "--help" ]; then
-  echo "-----------------------------------------------------------------------"
-  echo "It will add a user and create an authorized_keys file with the proper" 
-  echo "chmod permission flags. The public key is then copied over to the newly" 
-  echo "created user to match the keypair."
-  echo "-----------------------------------------------------------------------"
-  echo "Be sure the <Keypair>.pem file has proper permission flags."
-  echo " "
+if [[ $1 = "--help" ]]; then
+  cat `find help.txt`
   exit 1
 elif [ "$#" -ne 2 ]; then
   echo "Usage: $0 [<Keypair>.pem location] [Public DNS (IPv4)]" >&2
@@ -23,6 +17,7 @@ elif [ "$#" -ne 2 ]; then
 fi
 
 read -p "Name of new user: " NEW_USER
+
 MY_KEY=$1
 ec2=$2
 
@@ -46,7 +41,6 @@ exit
 echo "Done!"
 echo ...
 echo "Copying over public key..."
-# Requires root to copy over the authorized_keys file between users
 sudo su
 cat /home/$USER/.ssh/authorized_keys > /home/$NEW_USER/.ssh/authorized_keys
 exit
