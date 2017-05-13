@@ -18,6 +18,7 @@ You will be prompted to type in the name of the new user you wish to add to your
 
 Create Database (createDB.sh)
 -----------------------------
-This script will initialize and run the following APIs: MongoDB, BigchainDB, and additional python drivers.
+This script will automate the process of installing, initializing, and running the following 
+APIs: MongoDB, BigchainDB, and additional python drivers.
 
 ``./createDB.sh [keypair.pem location] [Public DNS (IPv4)]``
