@@ -2,7 +2,7 @@ Amazon Web Services Utility Belt
 ================================
 
 Before running the scripts on your local machine, be sure the script is made 
-executable with ``chmod +x``
+executable with ``chmod +x``.
 
 Initialize User (inituser.sh)
 -----------------------------
