@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Author: Charles Petchsy
+# @author: Charles Petchsy
 
 # This script is only to be used when creating users on ec2 (Ubuntu) with an
 # existing authorization key
